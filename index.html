@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap</title>
   </head>
@@ -11,62 +14,187 @@
     <!-- inizio header -->
     <header>
       <!-- header top -->
-      <div class="head_top container-fluid">
+      <div class="ms_head_top">
         <div class="container">
-          <div class="nav row">
-            <div class="nav_left col-xs-10 col-sm-4 col-md-6 col-lg-6"></div>
-            <div class="nav_right col-xs-2 col-sm-8 col-md-6 col-lg-6"></div>
+          <div class="ms_nav row">
+            <div class="ms_nav_left col-xs-10 col-sm-6">
+              <h2 class="text-uppercase">start bootstrap</h2>
+            </div>
+            <div class="ms_nav_right text-right col-xs-2 col-sm-6">
+              <span class="ms_button_menu visible-xs"><i class="fas fa-bars"></i></span>
+              <nav class="hidden-xs">
+                <ul class="list-inline">
+                  <li> <a href="#portfolio"><strong>PORTFOLIO</strong></a></li>
+                  <li> <a href="#about"><strong>ABOUT</strong></a></li>
+                  <li> <a href="#contact"><strong>CONTACT</strong></a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
       <!-- jumbo -->
-      <div class="jumbo container-fluid">
-        <div class="text"></div>
+      <div class="ms_jumbo">
+        <div class="wrapper">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="text-center padding_top padding_bottom col-xs-12">
+                <img class="avatar" src="img/avataaars.svg" alt="">
+                <h1 class="col-xs-12">START BOOTSTRAP</h1>
+                <div class="ms_divisore white col-xs-12">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!-- fine header -->
     <!-- inizio main -->
     <main>
       <!-- portfolio -->
-      <section>
-        <div class="container-fluid">
-          <div class="container">
-            <div class="row">
-              <div class="title col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
-              <div class="content col-xs-12 col-sm-6 col-md-4 col-lg-4"> </div>
-              <div class="content col-xs-12 col-sm-6 col-md-4 col-lg-4"></div>
-              <div class="content col-xs-12 col-sm-6 col-md-4 col-lg-4"></div>
-              <div class="content col-xs-12 col-sm-6 col-md-4 col-lg-4"></div>
-              <div class="content col-xs-12 col-sm-6 col-md-4 col-lg-4"></div>
-              <div class="content col-xs-12 col-sm-6 col-md-4 col-lg-4"></div>
+      <section id="portfolio" class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="padding_top title col-xs-12">
+              <h1>PORTFOLIO</h1>
+              <div class="ms_divisore blue">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row padding_bottom">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content">
+                <img src="img/cabin.png" class="img-rounded" alt="">
+              </div>
+           </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content">
+                <img src="img/cake.png" class="img-rounded" alt="">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content">
+                <img src="img/circus.png" class="img-rounded" alt="">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content">
+                <img src="img/game.png" class="img-rounded" alt="">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content">
+                <img src="img/safe.png" class="img-rounded" alt="">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content">
+                <img src="img/submarine.png" class="img-rounded" alt="">
+              </div>
             </div>
           </div>
         </div>
         <!-- about -->
       </section>
-      <div class="about container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="text_up col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
-            <div class="text_col col-xs-12 col-sm-6 col-md-6 col-lg-12"></div>
-            <div class="text_col col-xs-12 col-sm-6 col-md-6 col-lg-12"></div>
+      <section id="about">
+        <div class="about padding_bottom">
+          <div class="wrapper">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="text_up text-center col-xs-12">
+                  <h1>ABOUT</h1>
+                  <div class="ms_divisore white">
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row padding_bottom text-left">
+                <div class="text_col col-xs-12 col-sm-6">
+                  <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                </div>
+                <div class="text_col col-xs-12 col-sm-6">
+                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point.</p>
+                </div>
+              </div>
+              <div class="text-center">
+                <a class="btn btn-default" href="#" role="button">
+                  <span class="glyphicon glyphicon-save"></span>Download
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- contact -->
-      <section>
-        <div class="contact container">
-          <div class="text"></div>
+      <section id="contact">
+        <div class="contact padding_bottom ">
+          <div class="wrapper">
+            <div class="contact container-fluid">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h1 class="title text-uppercase">Contact me</h1>
+                  <div class="ms_divisore blue">
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <form role="form">
+                  <div class="form-group">
+                    <input type="text" placeholder="Nome">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" placeholder="Email Address">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Phone Number">
+                  </div>
+                  <div class="form-group">
+                    <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="footer container-fluid">
+      <div class="footer_top padding_top padding_bottom text-center">
         <div class="container">
           <div class="row">
-            <div class="text_col col-sx-12 col-sm-4 col-md-4 col-lg-4"></div>
-            <div class="text_col col-sx-12 col-sm-4 col-md-4 col-lg-4"></div>
-            <div class="text_col col-sx-12 col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="text_col col-sx-12 col-sm-4">
+              <address class="">
+                <strong class="footer_text text-uppercase">Location</strong><br>
+                2215 John Daniel Drive Clark, MO<br>
+                54243<br>
+              </address>
+            </div>
+            <div class="footer_text col-sx-12 col-sm-4 ">
+              <p> <strong>AROUND THE WEB</strong> </p>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="footer_text col-sx-12 col-sm-4">
+              <p> <strong>ABOUT FREELANCER</strong> </p>
+              <p>freelance is a free to use, open source Bootstrap theme createt by <a href="#">Start Bootstrap</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom padding_top">
+        <div class="container">
+          <div class="row">
+            <div class="text-center col-xs-12">
+              <p>Copyright<i class="far fa-copyright"></i> your Website 2019</p>
+            </div>
           </div>
         </div>
       </div>
