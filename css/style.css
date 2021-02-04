@@ -125,6 +125,10 @@ a > span {
 }
 
 @media screen and (max-width: 768px) {
+  .ms_jumbo .wrapper {
+    width: 100%;
+  }
+
   h1 {
     font-size: 30px;
   }
@@ -141,6 +145,10 @@ a > span {
 
   .footer_text {
     padding: 15px;
+  }
+
+  .ms_jumbo h3 {
+    font-size: 15px;
   }
 
 }
